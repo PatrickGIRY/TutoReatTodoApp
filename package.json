@@ -4,7 +4,8 @@
   "description": "React tutorial - Build a Todo App with best practices",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-dev-server": "./node_modules/.bin/webpack-dev-server"
   },
   "keywords": [],
   "author": "Patrick GIRY",
