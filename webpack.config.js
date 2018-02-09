@@ -13,7 +13,8 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: [' ', '.js']
+        modules: ["node_modules", "src"],
+        extensions: ['.js']
     },
     module: {
         loaders: [
