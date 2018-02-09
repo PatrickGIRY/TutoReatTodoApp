@@ -43,4 +43,9 @@ Having line number for debuging
 ## Test all is working
 
     npm run webpack-dev-server
-       
+    
+Open browser with [http://localhost:8080/](http://localhost:8080/) to test.
+
+You should have `HELLO FROM ENTRY` in the console.
+
+      
