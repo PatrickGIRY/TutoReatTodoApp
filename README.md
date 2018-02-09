@@ -39,4 +39,8 @@ Having line number for debuging
 
     mkdir src
     touch src/index.js
-   
+
+## Test all is working
+
+    npm run webpack-dev-server
+       
