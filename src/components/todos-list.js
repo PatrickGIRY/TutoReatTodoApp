@@ -4,7 +4,10 @@ import TodosListItem from './todos-list-item'
 
 export default class TodosList extends React.Component {
     renderItems() {
-        return this.props.todos.map((todo, index) => <TodosListItem key={index} {...todo} />)
+      
+        const _props = excludeTodos(this.props) 
+
+        return this.props.todos.map((todo, index) => <TodosListItem key={index} {...todo} {..._props} />)
     }
 
     render() {
@@ -18,3 +21,12 @@ export default class TodosList extends React.Component {
       )
     }
 }
+
+const excludeTodos = (props) => Object.keys(props)
+        .filter(propName => propName !== 'todos')
+        .reduce(appendProperty(props), {}) 
+
+const appendProperty = (props) => (object, propName) => {
+    object[propName] = props[propName]; return object
+}
+
